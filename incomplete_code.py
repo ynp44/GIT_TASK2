@@ -27,7 +27,7 @@ class Taxi( Transportation ):
       Transportation.__init__( self, start, end, distance)
 
    def find_cost( self ):
-      return distance*40
+      return self.distance*40
    
 class train(Transportation):
    
@@ -51,4 +51,4 @@ trip = [ Walk("KMITL","KMITL SCB Bank",0.6),
 
 for travel in trip:
    travel_cost += travel.find_cost()
-print travel_cost
+print(travel_cost)
